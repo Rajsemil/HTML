@@ -1,0 +1,21 @@
+<!-- tag is used to represents text tracks for both the <audio> and <video> tags. The tracks are supported formatted in WebVTT format (.vtt extension) - Web Video Text Tracks 
+Attributes:
+1. default   ---   default	Specifies the track should be enabled default. User's can change track preferences later on.
+2. kind	  ---   captions chapters descriptions metadata subtitles Specifies the kind of text in track.
+3. label   ---   text Specifies the title of the track.
+4. src ---   URL	Required. Specifies the URL resource of the track file.
+5. srclang	 ---   lang_code	Specifies the language of the track text data. It must be a valid as per BCP-47 language tag.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML track tag</title>
+</head>
+<body>
+  <video controls="controls">
+    <source src="../../images/rolling_sample.mp4" type="video/mp4"/>
+    <track src="../../rolling_sample.vtt" kind="subtitles" srclang="en" label="English"/>
+    <p>Your browser does not support the &lt;video&gt; tag.</p>
+  </video>
+</body>
+<html>
