@@ -1,0 +1,20 @@
+<!-- Meter tag is used to measure data within a given range. Also known as a gauge. It defines a scalar value with range.The meter tag used to display profile completed, disk usage, data loading status etc. 
+Attributes:
+1. form  ---  form_id Specify one or more forms that associate with meter element.
+2. low   ---   numeric Specify the range that considered to a low value.
+3. max  ---  numeric Specify the higher value of the range.
+4. min  ---   numeric Specify the lower value of the range.
+5. optimum  ---   numeric Optional. Specify the optimum value for the gauge. It must be with in the range from min attribute and max attribute.
+6. value   ---   numeric Required. Specify the measured value of the gauge. This value must be between the minimum and maximum values.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML meter tag</title>
+</head>
+<body>
+  <p>Your profile completed: <meter value="80" min="0" max="100">80%</meter></p>
+
+  <p>Free Space: <meter value="52" min="0" max="100">52%</meter></p>
+</body>
+</html>
