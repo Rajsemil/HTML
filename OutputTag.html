@@ -1,0 +1,21 @@
+<!-- Output tag is used for representing the result of a calculation (such as result performed by a script) or user action (such as entering data into a form element). 
+Attributes:
+1. form   ---   form_id Specify one or more forms that associate with <output> element.
+2. for  ---   element_id  Specifies IDs (separated by whitespace) of the elements, whose values use into the calculation.
+3. name   ---  text  Specify the name of the <output> element.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML output tag</title>
+</head>
+<body>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value);">
+    Value 1. <input type="number" name="a" value="25"/><br />
+    + <br />
+    Value 2. <input type="number" name="b" value="65"/> <br />
+    = <br />
+    Output is <output name="result">90</output>
+  </form>
+</body>
+</html>

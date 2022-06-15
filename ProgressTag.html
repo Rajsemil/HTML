@@ -1,0 +1,21 @@
+<!-- Progress tag used to show the progress of a downloading, loading, file uploading on the document. It is conjunction with JavaScript to display the progress of a task.
+Attributes:
+1. max   ---   number  Specify the floating point number that indicates how much work the relevant task requires in total before it can be considered complete.
+The Default value is 1.
+ 2. value   ---   number  Specify the floating point number that represent current progress of the relevant task.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML progress tag</title>
+</head>
+<body>
+  Please wait it's loading... 
+  <progress>
+      <span id="progress">22%</span>
+  </progress>
+  <br /><br />
+  Uploading status... 
+  <progress value="30" max="100">30 %</progress>
+</body>
+</html>
